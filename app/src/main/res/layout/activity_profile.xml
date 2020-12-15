@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCCC"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/configProfile"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="Enter Details "
+                android:textColor="#000"
+                android:fontFamily="@font/bungee"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/clinicNameField"
+                    android:layout_width="264dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Clinic name"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Clinic Name"
+                    android:fontFamily="@font/bangers"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/phoneNumField"
+                    android:layout_width="264dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Contact Number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Contact Number"
+                    android:fontFamily="@font/bangers"
+                    android:textColor="#000" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/addressField2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="Enter the Address"
+                    android:inputType="textPostalAddress"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/pickLocation"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_geolocate_black" />
+
+            </LinearLayout>
+
+
+
+                <TextView
+                android:id="@+id/teamNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Clinic Address"
+                android:fontFamily="@font/bangers"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.7">
+
+                <EditText
+                    android:id="@+id/nameField"
+                    android:layout_width="264dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:layout_marginLeft="69dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Doctor Name"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/passwordText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Doctor Name"
+                    android:layout_marginLeft="43dp"
+                    android:fontFamily="@font/bangers"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:text="Payment Methods"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/cashCB"
+                android:layout_marginTop="10dp"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:gravity="center"
+                android:text="Cash"
+                android:fontFamily="@font/bangers"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <CheckBox
+                android:id="@+id/debitCB"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/bangers"
+                android:text="Debit"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/creditCB"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/bangers"
+                android:text="Credit"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:background="#000"
+                android:text="Save"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/backButton1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:background="#000"
+            android:text="Back"
+            android:textColor="#fff" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0." />
+
+    </LinearLayout>
+
+</RelativeLayout>

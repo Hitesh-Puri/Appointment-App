@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBE9E9"
+    tools:context=".CheckIn">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="vertical"
+            android:layout_marginTop="20sp">
+
+            <TextView
+                android:id="@+id/Filters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Filters"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                app:fontFamily="@font/bungee" />
+
+            <EditText
+                android:id="@+id/nameField2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Name of clinic"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/teamNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bangers"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Clinic Name" />
+
+            <EditText
+                android:id="@+id/addressField"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Clinic's Address"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:singleLine="true"
+                android:fontFamily="@font/bangers"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Clinic Address" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/AvailableDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/bungee"
+            android:text="Days of Operation"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/sundayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:fontFamily="@font/bangers"
+                android:textSize="18sp"
+                android:text="Sunday " />
+
+            <CheckBox
+                android:id="@+id/mondayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:fontFamily="@font/bangers"
+                android:checked="false"
+                android:text="Monday "
+                android:textSize="18sp"/>
+
+            <CheckBox
+                android:id="@+id/tuesdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:fontFamily="@font/bangers"
+                android:textSize="18sp"
+                android:text="Tuesday " />
+
+            <CheckBox
+                android:id="@+id/wednesdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:fontFamily="@font/bangers"
+                android:textSize="18sp"
+                android:text="Wednesday " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/thursdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:fontFamily="@font/bangers"
+                android:textSize="18sp"
+                android:checked="false"
+                android:text="Thursday " />
+
+            <CheckBox
+                android:id="@+id/fridayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:fontFamily="@font/bangers"
+                android:textSize="18sp"
+                android:checked="false"
+                android:text="Friday " />
+
+            <CheckBox
+                android:id="@+id/saturdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:fontFamily="@font/bangers"
+                android:textSize="18sp"
+                android:text="Saturday " />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0." />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="90dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:background="#000"
+                android:text="Search"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <TextView
+            android:id="@+id/clinicListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0."
+            android:fontFamily="@font/bungee"
+            android:gravity="center_horizontal"
+            android:text="Results"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/clinicList"
+            android:layout_width="match_parent"
+            android:layout_height="257dp">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/clinicListTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0."
+            android:gravity="center_horizontal"
+            android:hint="Select a Clinic by Pressing"
+            android:textColorHint="#000"
+            android:fontFamily="@font/bangers"
+            android:textSize="15sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_weight="0." />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#000"
+            android:layout_marginBottom="10dp"
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

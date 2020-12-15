@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewServices"
+    android:background="#FFFCCC">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/changa_bold"
+        android:gravity="center"
+        android:padding="20sp"
+        android:text="Select the Category"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/DoctorRB"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/boogaloo"
+            android:gravity="center"
+            android:checked="true"
+            android:text="Doctor"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/NurseRB"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/boogaloo"
+            android:gravity="center"
+            android:text="Nurse"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/StaffRB"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/boogaloo"
+            android:gravity="center"
+            android:text="Staff"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/changa_bold"
+        android:gravity="center"
+        android:text="Services"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/serviceList"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:fontFamily="@font/changa_bold">
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:fontFamily="@font/antic"
+        android:text="Long Press to Edit Details"
+        android:textColor="#000000" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="Back"
+        android:fontFamily="@font/bungee"
+        android:textColor="#FFF" />
+
+</LinearLayout>
